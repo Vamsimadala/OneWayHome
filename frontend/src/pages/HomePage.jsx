@@ -2,10 +2,10 @@ import React from 'react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { features, problems, benefits } from '../data/mock';
-import { 
+import {
   Bookmark, LayoutDashboard, Sparkles, Zap, Mail, Ban,
-  ArrowRight, Check, X, Target, Rocket, Brain
-} from 'lucide-react';
+  ArrowRight, Check, X, Target, Rocket, Brain } from
+'lucide-react';
 
 const iconMap = {
   Bookmark, LayoutDashboard, Sparkles, Zap, Mail, Ban
@@ -40,20 +40,20 @@ const HomePage = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              size="lg" 
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg"
-              onClick={handleJoinWaitlist}
-            >
-              Join the Waitlist
+            <Button
+              size="lg"
+              className="inline-flex items-center justify-center whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-10 hover:bg-blue-700 !font-medium !text-lg gap-2 px-8 py-6 rounded-md shadow text-white bg-blue-600"
+              onClick={handleJoinWaitlist}>
+
+              Join OneWay
               <ArrowRight className="ml-2" size={20} />
             </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
+            <Button
+              size="lg"
+              variant="outline"
               className="border-slate-300 text-slate-700 px-8 py-6 text-lg hover:bg-slate-50"
-              onClick={handleJoinWaitlist}
-            >
+              onClick={handleJoinWaitlist}>
+
               Get Early Access
             </Button>
           </div>
@@ -77,8 +77,8 @@ const HomePage = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {problems.map((problem) => (
-              <Card key={problem.id} className="border-red-100 bg-red-50/50 hover:shadow-md transition-shadow">
+            {problems.map((problem) =>
+            <Card key={problem.id} className="border-red-100 bg-red-50/50 hover:shadow-md transition-shadow">
                 <CardContent className="p-6">
                   <div className="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center mb-4">
                     <X className="text-red-600" size={20} />
@@ -86,7 +86,7 @@ const HomePage = () => {
                   <p className="text-slate-700 font-medium">{problem.text}</p>
                 </CardContent>
               </Card>
-            ))}
+            )}
           </div>
         </div>
       </section>
@@ -119,8 +119,8 @@ const HomePage = () => {
                     <h3 className="text-lg font-semibold text-slate-900 mb-2">{feature.title}</h3>
                     <p className="text-slate-600 text-sm">{feature.description}</p>
                   </CardContent>
-                </Card>
-              );
+                </Card>);
+
             })}
           </div>
         </div>
@@ -139,14 +139,14 @@ const HomePage = () => {
                 Focus on landing the job, not managing chaos
               </h2>
               <div className="space-y-4">
-                {benefits.map((benefit) => (
-                  <div key={benefit.id} className="flex items-center gap-3">
+                {benefits.map((benefit) =>
+                <div key={benefit.id} className="flex items-center gap-3">
                     <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0">
                       <Check className="text-green-600" size={14} />
                     </div>
                     <span className="text-slate-700">{benefit.text}</span>
                   </div>
-                ))}
+                )}
               </div>
             </div>
             
@@ -179,18 +179,18 @@ const HomePage = () => {
           <p className="text-slate-400 text-lg mb-8">
             Early users get priority access to all features.
           </p>
-          <Button 
-            size="lg" 
-            className="bg-blue-600 hover:bg-blue-500 text-white px-10 py-6 text-lg"
-            onClick={handleJoinWaitlist}
-          >
-            Join the OneWay Waitlist
+          <Button
+            size="lg"
+            className="inline-flex items-center justify-center whitespace-nowrap transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-10 hover:bg-blue-500 !font-medium !text-lg gap-2 px-10 py-6 rounded-md shadow text-white bg-blue-600"
+            onClick={handleJoinWaitlist}>
+
+            Join OneWay
             <ArrowRight className="ml-2" size={20} />
           </Button>
         </div>
       </section>
-    </div>
-  );
+    </div>);
+
 };
 
 export default HomePage;
