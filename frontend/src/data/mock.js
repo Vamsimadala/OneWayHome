@@ -58,7 +58,7 @@ export const demoVideos = [
     id: 1,
     title: "OneWay Email Tracking Functionality",
     description: "Emails with Gmail read permission can read only job related emails for the past 30 days. If a matching email is found (regarding job applied, rejected, interviewed, or offer) in the inbox, it updates the job card status in OneWay Dashboard.",
-    youtubeUrl: "https://youtu.be/-4AdHGaPONg",
+    youtubeUrl: "https://www.youtube.com/watch?v=OfxpgUpk6vk",
     thumbnail: ""
   }
 ];
