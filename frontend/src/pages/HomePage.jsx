@@ -48,14 +48,6 @@ const HomePage = () => {
               Join OneWay
               <ArrowRight className="ml-2" size={20} />
             </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-slate-300 text-slate-700 px-8 py-6 text-lg hover:bg-slate-50"
-              onClick={handleJoinWaitlist}>
-
-              Get Early Access
-            </Button>
           </div>
         </div>
       </section>
