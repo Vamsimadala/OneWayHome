@@ -13,9 +13,11 @@ const Footer = () => {
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">O</span>
-              </div>
+              <img 
+                src="https://customer-assets.emergentagent.com/job_work-solutions-1/artifacts/zwzc5ldc_icon128.png" 
+                alt="OneWay Logo" 
+                className="w-8 h-8 object-contain brightness-0 invert"
+              />
               <span className="text-xl font-bold">OneWay</span>
             </div>
             <p className="text-slate-400 text-sm max-w-md mb-4">
