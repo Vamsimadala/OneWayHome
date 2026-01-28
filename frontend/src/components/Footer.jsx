@@ -16,7 +16,8 @@ const Footer = () => {
               <img 
                 src="https://customer-assets.emergentagent.com/job_work-solutions-1/artifacts/zwzc5ldc_icon128.png" 
                 alt="OneWay Logo" 
-                className="w-8 h-8 object-contain brightness-0 invert"
+                className="w-8 h-8 object-contain"
+                style={{ filter: 'brightness(0) invert(1)' }}
               />
               <span className="text-xl font-bold">OneWay</span>
             </div>
