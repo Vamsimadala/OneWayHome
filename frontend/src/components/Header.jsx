@@ -21,10 +21,12 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">O</span>
-            </div>
-            <span className="text-xl font-bold text-slate-900">OneWay</span>
+            <img 
+              src="https://customer-assets.emergentagent.com/job_work-solutions-1/artifacts/zwzc5ldc_icon128.png" 
+              alt="OneWay Logo" 
+              className="w-8 h-8 object-contain"
+            />
+            <span className="text-xl font-bold text-slate-700">OneWay</span>
           </Link>
 
           {/* Desktop Navigation */}
