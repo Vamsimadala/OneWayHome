@@ -56,23 +56,9 @@ export const benefits = [
 export const demoVideos = [
   {
     id: 1,
-    title: "Getting Started with OneWay",
-    description: "Learn how to set up your account and start tracking applications in minutes.",
-    youtubeUrl: "",
-    thumbnail: ""
-  },
-  {
-    id: 2,
-    title: "Dashboard Overview",
-    description: "A complete walkthrough of the OneWay dashboard and its powerful features.",
-    youtubeUrl: "",
-    thumbnail: ""
-  },
-  {
-    id: 3,
-    title: "AI Resume Tailoring",
-    description: "See how OneWay's AI helps you customize your resume for each job application.",
-    youtubeUrl: "",
+    title: "OneWay Email Tracking Functionality",
+    description: "Emails with Gmail read permission can read only job related emails for the past 30 days. If a matching email is found (regarding job applied, rejected, interviewed, or offer) in the inbox, it updates the job card status in OneWay Dashboard.",
+    youtubeUrl: "https://youtu.be/-4AdHGaPONg",
     thumbnail: ""
   }
 ];
