@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardContent } from '../components/ui/card';
-import { Shield, Lock, Eye, Database, UserCheck, Bell } from 'lucide-react';
+import { Shield, Lock, Eye, Database, UserCheck, Bell, Share2 } from 'lucide-react';
 
 const PrivacyPolicyPage = () => {
   const lastUpdated = "January 2025";
@@ -13,7 +13,8 @@ const PrivacyPolicyPage = () => {
         "Personal information you provide (name, email, phone number) when creating an account or contacting us.",
         "Job application data you choose to track, including company names, job titles, application status, and notes.",
         "Usage data such as how you interact with our platform, features you use, and time spent on the application.",
-        "Technical data including IP address, browser type, device information, and cookies for improving our services."
+        "Technical data including IP address, browser type, device information, and cookies for improving our services.",
+        "Google Account Data: When you connect your Google account for email tracking features, we access only job-related emails from the past 30 days using Gmail read-only permissions."
       ]
     },
     {
@@ -24,7 +25,21 @@ const PrivacyPolicyPage = () => {
         "To communicate with you about updates, features, and respond to your inquiries.",
         "To analyze usage patterns and improve our platform's functionality and user experience.",
         "To send you relevant notifications about your job applications (with your consent).",
-        "To protect against fraudulent or unauthorized activity."
+        "To protect against fraudulent or unauthorized activity.",
+        "Google User Data: We use Gmail data solely to identify job application status updates (applied, rejected, interviewed, or offer) and automatically update your OneWay dashboard."
+      ]
+    },
+    {
+      icon: Share2,
+      title: "Google User Data: Sharing, Transfer & Disclosure",
+      content: [
+        "We do NOT share, transfer, sell, or disclose your Google user data to any third parties.",
+        "We do NOT use Google user data for advertising, marketing, or any purpose unrelated to the OneWay job tracking service.",
+        "We do NOT allow any third-party access to your Gmail data or Google account information.",
+        "Google user data is processed solely on our secure servers to provide the email tracking feature.",
+        "We do NOT store the full content of your emails. We only extract and store job application status information.",
+        "Your Google data is never combined with data from other sources for any secondary purposes.",
+        "In the event of a business transfer or acquisition, Google user data handling will continue to comply with this policy and Google's API Services User Data Policy."
       ]
     },
     {
@@ -34,7 +49,8 @@ const PrivacyPolicyPage = () => {
         "We implement industry-standard security measures to protect your personal information.",
         "All data transmission is encrypted using SSL/TLS protocols.",
         "We regularly review and update our security practices to ensure data protection.",
-        "Access to personal data is restricted to authorized personnel only."
+        "Access to personal data is restricted to authorized personnel only.",
+        "Google user data is encrypted both in transit and at rest using industry-standard encryption."
       ]
     },
     {
@@ -45,7 +61,8 @@ const PrivacyPolicyPage = () => {
         "Correction: You can update or correct your personal information at any time.",
         "Deletion: You can request deletion of your account and associated data.",
         "Portability: You can request your data in a portable format.",
-        "Opt-out: You can unsubscribe from marketing communications at any time."
+        "Opt-out: You can unsubscribe from marketing communications at any time.",
+        "Revoke Google Access: You can disconnect your Google account and revoke OneWay's access at any time through your Google Account settings or within the OneWay app."
       ]
     },
     {
@@ -65,7 +82,8 @@ const PrivacyPolicyPage = () => {
         "We retain your personal data only as long as necessary to provide our services.",
         "Job application data is retained until you delete it or close your account.",
         "Upon account deletion, your data is permanently removed within 30 days.",
-        "Some data may be retained for legal compliance purposes."
+        "Some data may be retained for legal compliance purposes.",
+        "Google user data is retained only as long as your Google account is connected. Upon disconnection or account deletion, all Google-related data is permanently deleted within 30 days."
       ]
     }
   ];
